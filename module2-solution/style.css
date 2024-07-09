@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 40px;
+}
+
+.container {
+    width: 100%;
+}
+
+.section {
+    background-color: gray;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding: 60px 20px 20px 20px;
+    position: relative;
+}
+
+.chicken, .beef, .sushi {
+    background-color: gray;
+    border: 1px solid black;
+    font-size: 1.25em;
+    padding: 5px 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.section p {
+    margin: 0;
+}
+
+.chicken {
+    background-color: rgb(175, 108, 108);
+}
+
+.beef {
+    background-color: red;
+    color: white;
+}
+
+.sushi {
+    background-color: rgb(255, 255, 97);
+}
+
+@media (min-width: 992px) {
+    .section {
+        float: left;
+        width: 31.5%;    /*not sure if this is right but I guess that'll do */
+        margin: 1%;
+        height: 200px;
+        clear: right;
+    }
+
+    .section:nth-child(3) {
+        margin-right: 0;/* took me forever to find a solution for the row */
+        margin-left: 0.5%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        float: left;
+        width: 44%;
+        margin: 3%;
+        height: 200px;
+    }
+
+    .section:nth-child(3) {
+        width: 94%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        width: 80%;
+        margin: 4% 10% 4% 10%;
+    }
+}
