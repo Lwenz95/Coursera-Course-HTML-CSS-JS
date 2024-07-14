@@ -1,0 +1,138 @@
+body {
+  background-color: #cccccc;
+  color: #3a3a3a;
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+}
+.navbar-default {
+  background-color: #3a3a3a;
+  border-width: 0;
+}
+.navbar-default .navbar-brand {
+  color: #f6ffc3;
+  font-size: 1.3em;
+}
+div.navbar-header {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+}
+.navbar-default .navbar-toggle {
+  border-color: #f6ffc3;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-header button.navbar-toggle {
+  margin-top: 20px;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+}
+
+/*END HEADER */
+
+/* HOME PAGE */
+h1 {
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+  text-shadow: 0 0 10px #3a3a3a88;
+}
+div.row {
+  padding: 30px;
+  margin: auto;
+}
+#food-title {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 0 20px #f6ffc3;
+}
+.section-tile {
+  background-color: #3a3a3a;
+  color: #cccccc;
+  padding: 20px;
+  margin-bottom: 25px;
+  margin-top: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px inset #f6ffc3;
+}
+
+.back-to-top {
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+/* END HOME PAGE */
+
+
+
+/**************MEDIA QUERYS**************/
+
+/******* Large devices only ********/
+@media (min-width: 1200px) {
+
+}
+/******* Medium devices only ********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+
+/******* Small devices only ********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+
+/******* Extra small devices only ********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-collapse.in {
+    background-color: #f6ffc3;
+    border: none;
+    text-align: center;
+  }
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+    align-content: center;
+  }
+  /* End Header */
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer:nth-child(3) {
+    margin-bottom: 0;
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
+}
+
+ /******* XXS Devices ********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 {
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+}
